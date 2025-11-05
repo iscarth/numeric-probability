@@ -22,9 +22,8 @@ def normalize_kernel(kernel, lower_bound, upper_bound):
     return normalized_density
 
 def main():
-    polynomial_constant = spi.quad(kernel, lower_bound, upper_bound)
-    (integral, abs_error) = polynomial_constant
-    print(integral)
+    poly_density = normalize_kernel(kernel, lower_bound, upper_bound):
+    print(poly_densityl)
 
 if __name__ == "__main__":
     main()
